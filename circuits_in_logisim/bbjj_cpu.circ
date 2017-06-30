@@ -184,12 +184,111 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(180,90)" to="(190,90)"/>
     <wire from="(30,540)" to="(610,540)"/>
     <wire from="(250,280)" to="(250,340)"/>
-    <comp lib="4" loc="(530,410)" name="Register"/>
+    <comp lib="4" loc="(560,130)" name="Register"/>
+    <comp lib="4" loc="(960,180)" name="Register">
+      <a name="width" val="1"/>
+      <a name="trigger" val="high"/>
+    </comp>
+    <comp lib="6" loc="(633,62)" name="Text">
+      <a name="text" val="COPY_FROM"/>
+    </comp>
+    <comp lib="0" loc="(730,70)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x2"/>
+    </comp>
+    <comp lib="0" loc="(200,40)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="6" loc="(219,187)" name="Text"/>
+    <comp lib="6" loc="(567,402)" name="Text">
+      <a name="text" val="IP_CASE_1"/>
+    </comp>
+    <comp lib="6" loc="(343,163)" name="Text">
+      <a name="text" val="ROM (PROGRAM)"/>
+    </comp>
+    <comp lib="6" loc="(570,311)" name="Text">
+      <a name="text" val="IP_CASE_0"/>
+    </comp>
+    <comp lib="2" loc="(680,180)" name="Multiplexer">
+      <a name="width" val="8"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="4" loc="(850,360)" name="Shift Register"/>
     <comp lib="1" loc="(240,240)" name="OR Gate">
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
+    <comp lib="1" loc="(950,270)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(250,340)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(690,360)" name="Button">
+      <a name="label" val="PHASE2"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="1" loc="(770,350)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(440,100)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(170,100)" name="Clock">
+      <a name="label" val="CLOCK"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="1" loc="(660,220)" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="4" loc="(260,210)" name="Register"/>
+    <comp lib="3" loc="(790,80)" name="Comparator">
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="6" loc="(228,152)" name="Text"/>
+    <comp lib="6" loc="(283,161)" name="Text"/>
+    <comp lib="5" loc="(180,50)" name="Button"/>
+    <comp lib="5" loc="(380,90)" name="Button">
+      <a name="label" val="PHASE3"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(190,80)" name="Shift Register">
+      <a name="length" val="4"/>
+    </comp>
+    <comp lib="6" loc="(107,246)" name="Text">
+      <a name="text" val="SELECT IP"/>
+    </comp>
+    <comp lib="6" loc="(195,178)" name="Text">
+      <a name="text" val="INSTRUCTION POINTER (IP)"/>
+    </comp>
+    <comp lib="5" loc="(180,350)" name="Button">
+      <a name="label" val="PHASE1"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(200,30)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="6" loc="(541,104)" name="Text">
+      <a name="text" val="COPY_TO"/>
+    </comp>
+    <comp lib="4" loc="(420,210)" name="ROM">
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 8 32
+1000201
+</a>
+    </comp>
+    <comp lib="6" loc="(808,129)" name="Text">
+      <a name="text" val="RAM (DATA)"/>
+    </comp>
+    <comp lib="4" loc="(530,320)" name="Register"/>
     <comp lib="2" loc="(120,210)" name="Multiplexer">
       <a name="selloc" val="tr"/>
       <a name="width" val="8"/>
@@ -200,61 +299,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="trigger" val="high"/>
       <a name="label" val="ProgramPathSelector"/>
     </comp>
-    <comp lib="4" loc="(190,80)" name="Shift Register">
-      <a name="length" val="4"/>
-    </comp>
-    <comp lib="6" loc="(228,152)" name="Text"/>
-    <comp lib="1" loc="(250,340)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="5" loc="(380,90)" name="Button">
-      <a name="label" val="PHASE3"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="5" loc="(180,50)" name="Button"/>
-    <comp lib="1" loc="(440,100)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="5" loc="(180,350)" name="Button">
-      <a name="label" val="PHASE1"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(200,40)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="1"/>
-    </comp>
-    <comp lib="6" loc="(219,187)" name="Text"/>
-    <comp lib="4" loc="(420,210)" name="ROM">
-      <a name="dataWidth" val="32"/>
-      <a name="contents">addr/data: 8 32
-1000201
-</a>
-    </comp>
-    <comp lib="6" loc="(570,311)" name="Text">
-      <a name="text" val="IP_CASE_0"/>
-    </comp>
-    <comp lib="6" loc="(541,104)" name="Text">
-      <a name="text" val="COPY_TO"/>
-    </comp>
-    <comp lib="4" loc="(530,320)" name="Register"/>
-    <comp lib="6" loc="(107,246)" name="Text">
-      <a name="text" val="SELECT IP"/>
-    </comp>
-    <comp lib="6" loc="(633,62)" name="Text">
-      <a name="text" val="COPY_FROM"/>
-    </comp>
-    <comp lib="0" loc="(170,100)" name="Clock">
-      <a name="label" val="CLOCK"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="4" loc="(560,130)" name="Register"/>
     <comp lib="4" loc="(590,70)" name="Register"/>
-    <comp lib="1" loc="(770,350)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+    <comp lib="4" loc="(890,180)" name="RAM">
+      <a name="dataWidth" val="1"/>
+      <a name="bus" val="separate"/>
     </comp>
     <comp lib="0" loc="(450,210)" name="Splitter">
       <a name="fanout" val="4"/>
@@ -291,52 +339,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit30" val="3"/>
       <a name="bit31" val="3"/>
     </comp>
-    <comp lib="6" loc="(283,161)" name="Text"/>
-    <comp lib="3" loc="(790,80)" name="Comparator">
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="2" loc="(680,180)" name="Multiplexer">
-      <a name="width" val="8"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="4" loc="(960,180)" name="Register">
-      <a name="width" val="1"/>
-      <a name="trigger" val="high"/>
-    </comp>
-    <comp lib="4" loc="(890,180)" name="RAM">
-      <a name="dataWidth" val="1"/>
-      <a name="bus" val="separate"/>
-    </comp>
-    <comp lib="6" loc="(567,402)" name="Text">
-      <a name="text" val="IP_CASE_1"/>
-    </comp>
-    <comp lib="5" loc="(690,360)" name="Button">
-      <a name="label" val="PHASE2"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="1" loc="(660,220)" name="NOT Gate">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="6" loc="(808,129)" name="Text">
-      <a name="text" val="RAM (DATA)"/>
-    </comp>
-    <comp lib="1" loc="(950,270)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(195,178)" name="Text">
-      <a name="text" val="INSTRUCTION POINTER (IP)"/>
-    </comp>
-    <comp lib="6" loc="(343,163)" name="Text">
-      <a name="text" val="ROM (PROGRAM)"/>
-    </comp>
-    <comp lib="0" loc="(200,30)" name="Constant">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(730,70)" name="Constant">
-      <a name="width" val="8"/>
-      <a name="value" val="0x2"/>
-    </comp>
-    <comp lib="4" loc="(260,210)" name="Register"/>
+    <comp lib="4" loc="(530,410)" name="Register"/>
   </circuit>
 </project>
