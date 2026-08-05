@@ -44,7 +44,8 @@ instructions.
 ## Repository Structure
 
 ```
-├── index.html                   # Full documentation (also the GitHub Pages site)
+├── docs/
+│   └── full-doc.html            # Full documentation (also the GitHub Pages site)
 ├── LICENSE                      # MIT License
 ├── circuits_in_logisim/
 │   ├── bbjj_cpu.circ            # CPU circuit (open with Logisim)
@@ -136,7 +137,7 @@ implemented in RESM:
 ## Documentation & Links
 
 - 📖 **Full documentation:**
-  [arkenidar.github.io/resm_aka_bbjj/](https://arkenidar.github.io/resm_aka_bbjj/)
+  [arkenidar.github.io/resm_aka_bbjj/docs/full-doc.html](https://arkenidar.github.io/resm_aka_bbjj/docs/full-doc.html)
 - 🌐 **Esolangs wiki:**
   [BitBitJump on Esolangs.org](https://esolangs.org/wiki/BitBitJump#Featuring_a_Path_Selector_Bit_.28BBJ_Machine.29)
 - 📦 **Download ZIP:**
