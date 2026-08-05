@@ -48,11 +48,11 @@ instructions.
 │   └── full-doc.html            # Full documentation (also the GitHub Pages site)
 ├── LICENSE                      # MIT License
 ├── circuits_in_logisim/
-│   ├── bbjj_cpu.circ            # CPU circuit (open with Logisim)
+│   ├── bbjj_cpu.circ            # CPU circuit (open with Logisim-evolution)
 │   ├── testing_input_mode.circ  # I/O testing variant
 │   ├── rom.txt / ram.txt        # Memory contents for the circuit
 │   ├── circuit_schematics.png   # Visual schematic
-│   └── README.md                # Logisim usage notes
+│   └── README.md                # Logisim-evolution usage notes
 ├── flowcharts_in_violet/
 │   ├── or_gate.activity.violet.html   # OR gate program flowchart
 │   ├── not_gate.activity.violet.html  # NOT gate program flowchart
@@ -71,9 +71,9 @@ instructions.
 
 ### Explore the Hardware Circuit
 
-1. Download **Logisim** —
-   [http://www.cburch.com/logisim/](http://www.cburch.com/logisim/) (free, open
-   source, cross-platform)
+1. Download **Logisim-evolution** —
+   [https://github.com/logisim-evolution/logisim-evolution](https://github.com/logisim-evolution/logisim-evolution) (free, open
+   source, cross-platform; maintained fork of the original Logisim)
 2. Open `circuits_in_logisim/bbjj_cpu.circ`
 3. Load ROM/RAM content from `rom.txt` and `ram.txt`
 4. Simulate and observe the CPU executing instructions cycle by cycle
