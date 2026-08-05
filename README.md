@@ -98,11 +98,11 @@ instructions.
 
 Several software interpreters and tools are available in separate repositories:
 
-| Language       | Repository                                                      | Features                                                                          |
-| -------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **JavaScript** | [copyjump.js](https://github.com/arkenidar/copyjump.js)         | Browser-based VM and tools (web standards)                                        |
-| **Python**     | [CopyJumpMachine](https://github.com/arkenidar/CopyJumpMachine) | Parses `*.prg.txt` files; includes a byte-adder program                           |
-| **Java**       | [copyjumpvm](https://github.com/arkenidar/copyjumpvm)           | Parses `*.cj` numeric format; converts text → numeric format; quick demo included |
+| Language       | Repository                                                      | Live Demo                                                                         | Features                                                                          |
+| -------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **JavaScript** | [copyjump.js](https://github.com/arkenidar/copyjump.js)         | [▶️ Try it](https://arkenidar.github.io/copyjump.js/copyjump.html)                | Browser-based VM and tools (web standards)                                        |
+| **Python**     | [CopyJumpMachine](https://github.com/arkenidar/CopyJumpMachine) | —                                                                                 | Parses `*.prg.txt` files; includes a byte-adder program                           |
+| **Java**       | [copyjumpvm](https://github.com/arkenidar/copyjumpvm)           | —                                                                                 | Parses `*.cj` numeric format; converts text → numeric format; quick demo included |
 
 ---
 
